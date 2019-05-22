@@ -1,0 +1,20 @@
+<div div class="table-responsive">
+  <h1>User Details</h1>
+  <table style="width:700px;" class="table table-bordered">
+    <tr style="background: #ddf0f9;">
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+    <tr *ngFor="let user of usersData">
+      <td>{{user.name}}</td>
+      <td>{{user.age}}</td>
+    </tr>
+  </table>
+  <h2>Toggle content using ngIf</h2>
+  <p *ngIf="bflag; else elseBlock">Content to render when condition is true.
+  </p>
+  <button class="btn btn-primary " (click)="bflag = !bflag">toggle</button>
+  <ng-template #elseBlock>
+    <p>Else content rendered using ng-template when condition is false.</p>
+  </ng-template>
+</div>
