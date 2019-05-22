@@ -3,8 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-users',
-  templateUrl: './users.component.html',
-  styleUrls: ['./users.component.css']
+  templateUrl: './users.component.html'
 })
 export class UsersComponent implements OnInit {
   constructor(private httpClient: HttpClient) { }
